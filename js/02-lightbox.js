@@ -26,7 +26,9 @@ const isImgEl = evt.target.classList.contains('gallery__image');
 if(!isImgEl){
     return
 } 
-var lightbox = new SimpleLightbox('.gallery__link', { });
-
+var lightbox = new SimpleLightbox('.gallery__link',{
+captionsData: 'alt',
+captionDelay: 250,
+});
 
 }
