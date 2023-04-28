@@ -26,16 +26,13 @@ function createGalleryItems(galleryItems) {
 
 
 function zoomGalleryItems(evt){
+evt.preventDefault();
 const isImgEl = evt.target.classList.contains('gallery__image');
 if(!isImgEl){
     return
-} else {
-    galleryItems.map(({original})=> {
-        const instance = basicLightbox.create(`
-        <img src="${original}" width="800" height="600">`);
-    }
-    )
-
+} 
+const intance = basicLightbox.create(`<img src="${evt.target.dataset.source}" width="800" height="600">`);
+intance.show(); 
 }
 
-}
+
