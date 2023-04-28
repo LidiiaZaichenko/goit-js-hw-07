@@ -30,6 +30,3 @@ var lightbox = new SimpleLightbox('.gallery__link', { });
 
 
 }
-
-// const intance = basicLightbox.create(`<img src="${evt.target.dataset.source}" width="800" height="600">`);
-// intance.show(); 
